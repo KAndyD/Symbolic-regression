@@ -1,0 +1,12 @@
+{
+  "population": 64,
+  "generations": 63,
+  "runs": 30,
+  "seed": 261400,
+  "data_seed": 5071426,
+  "max_depth": 7,
+  "max_nodes": 63,
+  "penalty": 0.003,
+  "crossover_probability": 0.8,
+  "mutation_probability": 0.25
+}

@@ -1,0 +1,79 @@
+{
+  "GP_plain": {
+    "method": "GP_plain",
+    "seed": 261411,
+    "train_mse": 0.007532887790137893,
+    "validation_mse": 0.0063252829027841805,
+    "test_mse": 0.007897991413629204,
+    "nodes": 15,
+    "depth": 7,
+    "evaluations": 4096,
+    "validation_evaluations": 64,
+    "seconds": 0.19986739000000853,
+    "expression": "((x * x) - sin(((x * (sin(0.69) + pdiv(1.106, -0.434))) - x)))",
+    "tree": [
+      "-",
+      [
+        "*",
+        "x",
+        "x"
+      ],
+      [
+        "sin",
+        [
+          "-",
+          [
+            "*",
+            "x",
+            [
+              "+",
+              [
+                "sin",
+                0.69
+              ],
+              [
+                "/",
+                1.106,
+                -0.434
+              ]
+            ]
+          ],
+          "x"
+        ]
+      ]
+    ]
+  },
+  "GP_parsimony": {
+    "method": "GP_parsimony",
+    "seed": 261404,
+    "train_mse": 0.0029203076058516384,
+    "validation_mse": 0.0022311230622714443,
+    "test_mse": 0.002308523627595414,
+    "nodes": 10,
+    "depth": 5,
+    "evaluations": 4096,
+    "validation_evaluations": 64,
+    "seconds": 0.21213933000001362,
+    "expression": "((x * x) + sin(((x + x) + x)))",
+    "tree": [
+      "+",
+      [
+        "*",
+        "x",
+        "x"
+      ],
+      [
+        "sin",
+        [
+          "+",
+          [
+            "+",
+            "x",
+            "x"
+          ],
+          "x"
+        ]
+      ]
+    ]
+  }
+}
